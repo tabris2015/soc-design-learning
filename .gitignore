@@ -1,0 +1,14 @@
+build/
+*.vcd
+.board
+local.mk
+__pycache__/
+
+# Quartus project output
+output_files/
+qdb/
+dni/
+tmp-clearbox/
+*.rpt
+*.summary
+*.qws

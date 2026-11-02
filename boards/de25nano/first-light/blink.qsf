@@ -1,0 +1,11 @@
+set_global_assignment -name FAMILY "Agilex 5"
+set_global_assignment -name DEVICE A5EB013BB23BE4SCS
+set_global_assignment -name TOP_LEVEL_ENTITY blink
+set_global_assignment -name SYSTEMVERILOG_FILE blink.sv
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+
+# CLOCK0_50 and LEDR[0], from the DE25-Nano user manual. Both banks are 1.1 V.
+set_location_assignment PIN_DJ35 -to clk
+set_location_assignment PIN_DF35 -to led
+set_instance_assignment -name IO_STANDARD "1.1-V" -to clk
+set_instance_assignment -name IO_STANDARD "1.1-V" -to led
